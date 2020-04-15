@@ -11,8 +11,10 @@ Index
 
 {% block body %}
 <h1>지도를 보여주자</h1>
+<div id="map"></div>
 {% endblock %}
 
 {% block js %}
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=413b25dd98e35a244da20af979abfdb6"></script>
     <script src="{% static 'js/index.js' %}"></script>
 {% endblock %}
